@@ -8,9 +8,140 @@ i{font-style: normal;}
     margin:  0 auto;
     .nav_l{
     float: left;
+    p{
+        float: left;
+        font-size: 12px;
+        line-height: 32px;
+        color: #999;
+    }
+    a{
+        float: left;
+        display: block;
+        line-height: 32px;
+        margin-left: 20px;
+        font-size: 12px;
+        &:hover{
+            color: #ff0036;
+        }
+    }
     }
     .nav_r{
         float: right;
+            position: relative;
+       
+        li{
+            margin-right: 12px;
+            float: left;
+            // margin-left: 20px;
+            
+            i{
+                font-size: 12px;
+                float: left;
+                line-height: 32px;
+                color: #ff0036;
+                margin-right: 5px;
+                
+            }
+            a{  
+                display: block;
+                float: left;
+                height: 32px;
+                line-height: 32px;
+                font-size: 12px;
+                &:hover{
+                    color: #ff0036;
+                    text-decoration: underline;
+                    
+                }
+                img{
+                   margin-left: 5px;
+                    // float: left;
+                    vertical-align: middle;
+                }
+            }
+            
+        }
+         .sec{
+            margin-right: 5px;
+            a{
+                padding-left: 9px;
+                padding-right: 6px;
+            }
+            .mytb,.favorite{
+                display: none;
+                color: #999;
+                position: absolute;
+                line-height: 20px;
+                padding-top: 10px;
+                top: 33px;
+                width: 82px;
+                height: 46px;
+                // border: 1px solid #999;
+                a{
+                //  display: block;
+                padding: 0;
+                 width: 82px;
+                 font-size: 12px;
+                 height: 20px;
+                line-height: 20px;
+                text-align: center;
+                }
+            }
+            .merchant{
+                position: absolute;
+                top: 33px;
+                // left: 0px;
+                width: 122px;
+                height: 155px;
+                padding: 10px;
+                li{
+                    float: left;
+                    padding: 0;
+                    a{
+                        padding: 0;
+                    }
+                    
+                }
+            }
+            &:hover{
+                background-color: white;
+              .mytb{
+                   border: 1px solid #eee;
+                   margin: -1px;
+                   display: block;
+                //    top:32px;
+                //    left:-2px;
+               }
+               .favorite{
+                   border: 1px solid #eee;
+                   margin: -1px;
+                   display: block;
+               }
+                &>a{
+                    position: relative;
+                     border: 1px solid #eeeeee;
+                     border-bottom: 0px;
+                     height: 32px;
+                     border-bottom: 1px solid white;
+                    margin: -1px;
+                    background-color: white;
+                    z-index: 20;
+                }
+                
+            
+
+                img{
+                   content:url(../image/shang.png);
+                }
+            }
+        }
+        span{
+            float: left;
+            line-height: 32px;
+            color: #999;
+            font-size: 12px;
+            margin: 0  10px 0 5px;
+        }
     }
 
 }

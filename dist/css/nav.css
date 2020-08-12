@@ -18,5 +18,99 @@ i {
   margin: 0 auto; }
   .nav_c .nav_l {
     float: left; }
+    .nav_c .nav_l p {
+      float: left;
+      font-size: 12px;
+      line-height: 32px;
+      color: #999; }
+    .nav_c .nav_l a {
+      float: left;
+      display: block;
+      line-height: 32px;
+      margin-left: 20px;
+      font-size: 12px; }
+      .nav_c .nav_l a:hover {
+        color: #ff0036; }
   .nav_c .nav_r {
-    float: right; }
+    float: right;
+    position: relative; }
+    .nav_c .nav_r li {
+      margin-right: 12px;
+      float: left; }
+      .nav_c .nav_r li i {
+        font-size: 12px;
+        float: left;
+        line-height: 32px;
+        color: #ff0036;
+        margin-right: 5px; }
+      .nav_c .nav_r li a {
+        display: block;
+        float: left;
+        height: 32px;
+        line-height: 32px;
+        font-size: 12px; }
+        .nav_c .nav_r li a:hover {
+          color: #ff0036;
+          text-decoration: underline; }
+        .nav_c .nav_r li a img {
+          margin-left: 5px;
+          vertical-align: middle; }
+    .nav_c .nav_r .sec {
+      margin-right: 5px; }
+      .nav_c .nav_r .sec a {
+        padding-left: 9px;
+        padding-right: 6px; }
+      .nav_c .nav_r .sec .mytb, .nav_c .nav_r .sec .favorite {
+        display: none;
+        color: #999;
+        position: absolute;
+        line-height: 20px;
+        padding-top: 10px;
+        top: 33px;
+        width: 82px;
+        height: 46px; }
+        .nav_c .nav_r .sec .mytb a, .nav_c .nav_r .sec .favorite a {
+          padding: 0;
+          width: 82px;
+          font-size: 12px;
+          height: 20px;
+          line-height: 20px;
+          text-align: center; }
+      .nav_c .nav_r .sec .merchant {
+        position: absolute;
+        top: 33px;
+        width: 122px;
+        height: 155px;
+        padding: 10px; }
+        .nav_c .nav_r .sec .merchant li {
+          float: left;
+          padding: 0; }
+          .nav_c .nav_r .sec .merchant li a {
+            padding: 0; }
+      .nav_c .nav_r .sec:hover {
+        background-color: white; }
+        .nav_c .nav_r .sec:hover .mytb {
+          border: 1px solid #eee;
+          margin: -1px;
+          display: block; }
+        .nav_c .nav_r .sec:hover .favorite {
+          border: 1px solid #eee;
+          margin: -1px;
+          display: block; }
+        .nav_c .nav_r .sec:hover > a {
+          position: relative;
+          border: 1px solid #eeeeee;
+          border-bottom: 0px;
+          height: 32px;
+          border-bottom: 1px solid white;
+          margin: -1px;
+          background-color: white;
+          z-index: 20; }
+        .nav_c .nav_r .sec:hover img {
+          content: url(../image/shang.png); }
+    .nav_c .nav_r span {
+      float: left;
+      line-height: 32px;
+      color: #999;
+      font-size: 12px;
+      margin: 0  10px 0 5px; }
