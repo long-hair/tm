@@ -16,7 +16,12 @@ task('image', async ()=>{
   .pipe(dest('./dist/image'))
   .pipe(load.connect.reload())
 })
-
+// 处理iconfont
+task('icon', async ()=>{
+  src('./iconfont/**/*.*')
+  .pipe(dest('./dist/iconfont'))
+  .pipe(load.connect.reload())
+})
 // 处理scss
 task('scss', async ()=>{
   src('./scss/*.scss')
@@ -45,6 +50,8 @@ task('watch',async ()=>{
   watch('./scss/*.scss',series('scss'));
   watch('./script/*.js',series('script'));
   watch('./pages/*.html',series('html'));
+  watch('./iconfont/*.*',series('icon'));
+
 })
 
 // 启动服务，自动刷新
@@ -57,4 +64,4 @@ task('connect',async ()=>{
 })
 
 // 构建开发包
-task('dev',series('delDist','image','scss','script','html','connect','watch'))
+task('dev',series('delDist','icon','image','scss','script','html','connect','watch'))

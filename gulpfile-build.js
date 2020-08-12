@@ -27,6 +27,16 @@ task('scss', async ()=>{
   .pipe(dest('./rev/scss'))
 })
 
+// 处理iconfont
+task('icon', async ()=>{
+  src('./iconfont/*.*')
+  .pipe(load.sass())
+  // .pipe(load.rev())
+  // .pipe(load.minifyCss())
+  .pipe(dest('./dist/iconfont'))
+  // .pipe(load.rev.manifest())
+  // .pipe(dest('./rev/scss'))
+})
 // 处理js
 task('script', async ()=>{
   src('./script/*.js')
@@ -64,4 +74,4 @@ task('connect',async ()=>{
 })
 
 // 构建生产包
-task('build',series('delDist','image','scss','script','html','connect'))
+task('build',series('delDist','icon','image','scss','script','html','connect'))

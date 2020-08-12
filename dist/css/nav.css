@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #999999; }
+
+i {
+  font-style: normal; }
+
+.nav_c {
+  width: 1230px;
+  height: 32px;
+  margin: 0 auto; }
+  .nav_c .nav_l {
+    float: left; }
+  .nav_c .nav_r {
+    float: right; }
