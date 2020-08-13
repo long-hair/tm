@@ -15,7 +15,8 @@ i {
 .nav_c {
   width: 1230px;
   height: 32px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   .nav_c .nav_l {
     float: left; }
     .nav_c .nav_l p {
@@ -32,8 +33,7 @@ i {
       .nav_c .nav_l a:hover {
         color: #ff0036; }
   .nav_c .nav_r {
-    float: right;
-    position: relative; }
+    float: right; }
     .nav_c .nav_r li {
       margin-right: 12px;
       float: left; }
@@ -55,6 +55,31 @@ i {
         .nav_c .nav_r li a img {
           margin-left: 5px;
           vertical-align: middle; }
+    .nav_c .nav_r .phone .erweima {
+      border: 1px solid #eee;
+      position: absolute;
+      top: 26px;
+      margin-left: -50px;
+      width: 175px;
+      height: 227px;
+      background: url(../image/er.png) no-repeat;
+      display: none; }
+      .nav_c .nav_r .phone .erweima li {
+        display: block;
+        margin-top: 186px;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        color: #5b5b5b;
+        width: 100%; }
+      .nav_c .nav_r .phone .erweima p {
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        color: #7f2b2b;
+        width: 100%; }
+    .nav_c .nav_r .phone:hover .erweima {
+      display: block; }
     .nav_c .nav_r .sec {
       margin-right: 5px; }
       .nav_c .nav_r .sec a {
@@ -77,16 +102,72 @@ i {
           line-height: 20px;
           text-align: center; }
       .nav_c .nav_r .sec .merchant {
+        display: none;
         position: absolute;
         top: 33px;
-        width: 122px;
-        height: 155px;
-        padding: 10px; }
+        width: 142px;
+        height: 159px;
+        padding-top: 6px; }
+        .nav_c .nav_r .sec .merchant h4 {
+          font-size: 12px;
+          line-height: 20px;
+          color: #666666;
+          margin-left: 10px; }
         .nav_c .nav_r .sec .merchant li {
           float: left;
-          padding: 0; }
+          padding: 0;
+          margin: 0; }
           .nav_c .nav_r .sec .merchant li a {
-            padding: 0; }
+            height: 22px;
+            line-height: 22px;
+            padding: 0;
+            margin: 0 12px 0 10px; }
+        .nav_c .nav_r .sec .merchant hr {
+          border: 0px;
+          width: 124px;
+          margin-left: 10px;
+          text-align: center;
+          border-bottom: 1px dashed #666666; }
+      .nav_c .nav_r .sec .navg {
+        position: absolute;
+        left: 26px;
+        top: 33px;
+        width: 1198px;
+        height: 135px;
+        padding-top: 25px;
+        border: 1px solid #eeeeee;
+        display: none; }
+        .nav_c .nav_r .sec .navg h3 {
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 12px;
+          font-weight: normal; }
+        .nav_c .nav_r .sec .navg .hot {
+          color: #f89245; }
+        .nav_c .nav_r .sec .navg .market h3 {
+          color: #6693e1; }
+        .nav_c .nav_r .sec .navg .market a:hover {
+          color: #6693e1; }
+        .nav_c .nav_r .sec .navg a:hover {
+          color: #f89245; }
+        .nav_c .nav_r .sec .navg ul {
+          width: 455px;
+          float: left;
+          padding-left: 30px;
+          border-right: 1px solid #eeeeee; }
+          .nav_c .nav_r .sec .navg ul li {
+            float: left;
+            width: 79px;
+            height: 25px;
+            line-height: 28px; }
+            .nav_c .nav_r .sec .navg ul li a {
+              padding: 0; }
+        .nav_c .nav_r .sec .navg .help {
+          width: 195px; }
+          .nav_c .nav_r .sec .navg .help h3 {
+            color: #777777; }
+          .nav_c .nav_r .sec .navg .help a:hover {
+            color: #777777; }
       .nav_c .nav_r .sec:hover {
         background-color: white; }
         .nav_c .nav_r .sec:hover .mytb {
@@ -97,13 +178,19 @@ i {
           border: 1px solid #eee;
           margin: -1px;
           display: block; }
+        .nav_c .nav_r .sec:hover .merchant {
+          border: 1px solid #eee;
+          margin: -1px;
+          display: block; }
+        .nav_c .nav_r .sec:hover .navg {
+          display: block; }
         .nav_c .nav_r .sec:hover > a {
           position: relative;
           border: 1px solid #eeeeee;
           border-bottom: 0px;
+          margin: -1px;
           height: 32px;
           border-bottom: 1px solid white;
-          margin: -1px;
           background-color: white;
           z-index: 20; }
         .nav_c .nav_r .sec:hover img {

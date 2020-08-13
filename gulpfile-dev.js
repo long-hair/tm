@@ -44,6 +44,12 @@ task('html', async ()=>{
   .pipe(load.connect.reload())
 })
 
+// 处理swiper
+task('swiper', async ()=>{
+  src('./swiper/**/*.*')
+  .pipe(dest('./dist/swiper'))
+  .pipe(load.connect.reload())
+})
 // 监听文件变化
 task('watch',async ()=>{
   watch('./image/*.*',series('image'));
@@ -51,6 +57,8 @@ task('watch',async ()=>{
   watch('./script/*.js',series('script'));
   watch('./pages/*.html',series('html'));
   watch('./iconfont/*.*',series('icon'));
+  watch('./swiper/*.*',series('swiper'));
+
 
 })
 
@@ -64,4 +72,4 @@ task('connect',async ()=>{
 })
 
 // 构建开发包
-task('dev',series('delDist','icon','image','scss','script','html','connect','watch'))
+task('dev',series('delDist','icon','swiper','image','scss','script','html','connect','watch'))

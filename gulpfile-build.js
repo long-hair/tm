@@ -37,6 +37,16 @@ task('icon', async ()=>{
   // .pipe(load.rev.manifest())
   // .pipe(dest('./rev/scss'))
 })
+// 处理swiper
+task('swiper', async ()=>{
+  src('./swiper/*.*')
+  // .pipe(load.sass())
+  // .pipe(load.rev())
+  // .pipe(load.minifyCss())
+  .pipe(dest('./dist/swiper'))
+  // .pipe(load.rev.manifest())
+  // .pipe(dest('./rev/scss'))
+})
 // 处理js
 task('script', async ()=>{
   src('./script/*.js')
@@ -74,4 +84,4 @@ task('connect',async ()=>{
 })
 
 // 构建生产包
-task('build',series('delDist','icon','image','scss','script','html','connect'))
+task('build',series('delDist','swiper','icon','image','scss','script','html','connect'))
