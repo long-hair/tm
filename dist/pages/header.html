@@ -356,7 +356,7 @@
                         <div class="swiper-slide color_2">
                             <div class="img_wrap">
                                 <img src="../image/banner.jpg" alt="">
-                                <img class="yifu" src="../image/yifu.webp" alt="">
+                                <div class="yifu" ><a href=""></a></div>
                             </div>
                             
                         </div>
@@ -378,7 +378,10 @@
 <script src="../swiper/swiper-bundle.min.js"></script>
 <script>
     var mySwiper = new Swiper('.swiper-container', {
-        autoplay: true,
+        autoplay: {
+            delay:3000,
+            disableOnInteraction:false
+        },
         loop: true, // 循环模式选项
         effect: 'fade',
 

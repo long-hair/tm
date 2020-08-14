@@ -1,0 +1,249 @@
+.contentWrap {
+  width: 1230px;
+  min-height: 200px;
+  margin: 0 auto; }
+  .contentWrap > img {
+    display: block;
+    width: 600px;
+    height: 40px;
+    margin: 25px auto; }
+  .contentWrap .new_fashion {
+    width: 1240px;
+    overflow: hidden;
+    margin-bottom: 34px; }
+    .contentWrap .new_fashion a {
+      position: relative;
+      float: left; }
+      .contentWrap .new_fashion a img {
+        width: 238px;
+        height: 269px;
+        margin-right: 10px; }
+      .contentWrap .new_fashion a .mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; }
+      .contentWrap .new_fashion a:hover {
+        background-color: white;
+        opacity: 0.6; }
+  .contentWrap .new_fashion_sec {
+    width: 1230px;
+    overflow: hidden;
+    margin-bottom: 24px; }
+    .contentWrap .new_fashion_sec > div {
+      float: left;
+      overflow: hidden; }
+      .contentWrap .new_fashion_sec > div div {
+        height: 55px;
+        width: 100%; }
+        .contentWrap .new_fashion_sec > div div h3 {
+          margin-left: 10px;
+          font-size: 18px;
+          line-height: 55px;
+          color: #333333;
+          float: left; }
+        .contentWrap .new_fashion_sec > div div h4 {
+          font-size: 12px;
+          line-height: 55px;
+          float: left;
+          color: #333;
+          margin-left: 11px; }
+        .contentWrap .new_fashion_sec > div div span {
+          cursor: pointer;
+          float: right;
+          font-size: 16px;
+          line-height: 55px;
+          color: #666666; }
+          .contentWrap .new_fashion_sec > div div span img {
+            width: 18px;
+            display: block;
+            float: right;
+            margin-right: 14px;
+            margin-top: 18px;
+            margin-left: 7px; }
+    .contentWrap .new_fashion_sec .new_left {
+      width: 234px;
+      height: 371px;
+      position: relative; }
+      .contentWrap .new_fashion_sec .new_left:hover .mask {
+        display: block; }
+      .contentWrap .new_fashion_sec .new_left .mask {
+        width: 100%;
+        height: 371px;
+        position: absolute;
+        bottom: 0;
+        background: white;
+        opacity: 0.4;
+        z-index: 4;
+        display: none; }
+      .contentWrap .new_fashion_sec .new_left > img {
+        cursor: pointer;
+        width: 234px;
+        height: 316px; }
+    .contentWrap .new_fashion_sec .new_center {
+      width: 485px;
+      height: 371px;
+      margin: 0 13px;
+      position: relative; }
+      .contentWrap .new_fashion_sec .new_center:hover .mask {
+        display: block; }
+      .contentWrap .new_fashion_sec .new_center .mask {
+        width: 100%;
+        height: 371px;
+        position: absolute;
+        bottom: 0;
+        background: white;
+        opacity: 0.4;
+        z-index: 4;
+        display: none; }
+      .contentWrap .new_fashion_sec .new_center > img {
+        cursor: pointer;
+        border-top: 1px solid #eee;
+        width: 485px;
+        height: 316px; }
+    .contentWrap .new_fashion_sec .new_right {
+      position: relative;
+      width: 485px;
+      height: 371px; }
+      .contentWrap .new_fashion_sec .new_right:hover .mask {
+        display: block; }
+      .contentWrap .new_fashion_sec .new_right .mask {
+        width: 100%;
+        height: 371px;
+        position: absolute;
+        bottom: 0;
+        background: white;
+        opacity: 0.4;
+        z-index: 4;
+        display: none; }
+      .contentWrap .new_fashion_sec .new_right > img {
+        cursor: pointer;
+        width: 485px;
+        height: 316px; }
+  .contentWrap .merchandise > img {
+    height: 25px;
+    margin-bottom: 10px; }
+  .contentWrap .merchandise .mer_list {
+    width: 1230px;
+    height: 618px; }
+    .contentWrap .merchandise .mer_list .max {
+      cursor: pointer;
+      float: left; }
+      .contentWrap .merchandise .mer_list .max img {
+        width: 235px;
+        height: 618px; }
+    .contentWrap .merchandise .mer_list ul {
+      float: left;
+      width: 995px;
+      height: 618px; }
+      .contentWrap .merchandise .mer_list ul .double {
+        position: relative;
+        float: left;
+        padding: 10px;
+        width: 464px;
+        height: 280px;
+        margin-left: 12px;
+        background-color: #fcfcfc; }
+        .contentWrap .merchandise .mer_list ul .double span {
+          cursor: pointer;
+          display: block;
+          width: 231px;
+          height: 57px;
+          text-align: center;
+          float: left;
+          font-size: 18px;
+          line-height: 58px;
+          background-color: #f1f1f1; }
+        .contentWrap .merchandise .mer_list ul .double .active {
+          color: white;
+          background-color: #00b262; }
+        .contentWrap .merchandise .mer_list ul .double .con {
+          cursor: pointer;
+          position: relative;
+          float: left;
+          width: 463px;
+          height: 226px;
+          background-color: white; }
+          .contentWrap .merchandise .mer_list ul .double .con > img {
+            display: block;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            right: 30px;
+            top: 10px; }
+          .contentWrap .merchandise .mer_list ul .double .con .tag {
+            position: absolute;
+            top: 85px;
+            width: 265px;
+            height: 87px;
+            background: url(../image/img18.png) no-repeat;
+            padding-left: 26px;
+            opacity: 0.8; }
+            .contentWrap .merchandise .mer_list ul .double .con .tag img {
+              width: 23px;
+              height: 23px;
+              float: left;
+              margin-top: 15px;
+              margin-right: 12px; }
+            .contentWrap .merchandise .mer_list ul .double .con .tag h2 {
+              margin-top: 15px;
+              font-size: 24px;
+              line-height: 24px;
+              color: #4eb262; }
+            .contentWrap .merchandise .mer_list ul .double .con .tag p {
+              display: block;
+              font-size: 20px;
+              margin-top: 12px;
+              color: #000000; }
+      .contentWrap .merchandise .mer_list ul li {
+        display: block;
+        float: left;
+        margin-bottom: 14px;
+        margin-left: 14px;
+        width: 234px;
+        height: 300px; }
+        .contentWrap .merchandise .mer_list ul li a {
+          position: relative;
+          display: block;
+          width: 232px;
+          height: 298px;
+          background-color: white;
+          margin: 1px; }
+          .contentWrap .merchandise .mer_list ul li a img {
+            width: 185px;
+            height: 185px;
+            margin-top: 20px;
+            margin-left: 26px; }
+          .contentWrap .merchandise .mer_list ul li a p {
+            margin-left: 50px;
+            width: 130px;
+            line-height: 20px;
+            font-size: 12px;
+            text-align: center;
+            color: #333333; }
+          .contentWrap .merchandise .mer_list ul li a span {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+            color: #ff0036; }
+          .contentWrap .merchandise .mer_list ul li a .mask {
+            display: none;
+            width: 232px;
+            height: 298px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: white;
+            opacity: 0.2;
+            z-index: 5; }
+        .contentWrap .merchandise .mer_list ul li:hover {
+          width: 232px;
+          height: 298px;
+          border: 1px solid #ff0036; }
+          .contentWrap .merchandise .mer_list ul li:hover a {
+            margin: 0; }
+          .contentWrap .merchandise .mer_list ul li:hover .mask {
+            display: block; }

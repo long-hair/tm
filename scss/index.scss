@@ -2,7 +2,7 @@
 li{list-style: none;}
 a{text-decoration: none; color: #999999;}
 .wrap{
-    width: 100%;
+    width: calc(100% - 17px);
     .nav{
         width: 100%;
         height: 32px;
@@ -11,5 +11,17 @@ a{text-decoration: none; color: #999999;}
     }
     .header{
         width: 100%;
+    }
+    .content{
+        width: 100%;
+        background-color: rgb(245,245,245);
+        min-height: 200px;
+        overflow: hidden;
+    }
+    .bottom{
+        width: 100%;
+         border-top: 1px solid #6666;
+         margin-top: 50px;
+
     }
 }

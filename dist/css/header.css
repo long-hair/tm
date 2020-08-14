@@ -85,9 +85,16 @@
             position: absolute;
             top: 0;
             right: 0;
-            z-index: 3;
+            z-index: 99;
             width: 240px;
-            height: 256px; }
+            height: 256px;
+            background-image: url("../image/yifu.webp");
+            background-color: white;
+            opacity: 0.5; }
+            .content_wrap .banner_wrap .banner .swiper-container .color_2 .yifu a {
+              display: block;
+              width: 240px;
+              height: 256px; }
         .content_wrap .banner_wrap .banner .swiper-container .color_3 {
           background-color: #081704; }
         .content_wrap .banner_wrap .banner .swiper-container .color_4 {

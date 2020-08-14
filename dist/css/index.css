@@ -10,7 +10,7 @@ a {
   color: #999999; }
 
 .wrap {
-  width: 100%; }
+  width: calc(100% - 17px); }
   .wrap .nav {
     width: 100%;
     height: 32px;
@@ -18,3 +18,12 @@ a {
     border: 1px solid #e5e5e5; }
   .wrap .header {
     width: 100%; }
+  .wrap .content {
+    width: 100%;
+    background-color: whitesmoke;
+    min-height: 200px;
+    overflow: hidden; }
+  .wrap .bottom {
+    width: 100%;
+    border-top: 1px solid #6666;
+    margin-top: 50px; }

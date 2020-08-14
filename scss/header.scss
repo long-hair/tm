@@ -106,10 +106,17 @@
                        position: absolute;
                        top: 0;
                        right: 0;
-                       z-index: 3;
+                       z-index: 99;
                        width: 240px;
                        height: 256px;
-          
+                       background-image:url("../image/yifu.webp");
+                       background-color: white;
+                       opacity: 0.5;
+                        a{
+                            display: block;
+                            width: 240px;
+                            height: 256px;
+                        }
                     //    background-color: rgb(181,186,180);
                     //    background-image: url(../image/头部.png);
                    }
