@@ -58,12 +58,14 @@ i {
     .nav_c .nav_r .phone .erweima {
       border: 1px solid #eee;
       position: absolute;
+      z-index: 3;
       top: 26px;
       margin-left: -50px;
       width: 175px;
       height: 227px;
       background: url(../image/er.png) no-repeat;
-      display: none; }
+      display: none;
+      background-color: white; }
       .nav_c .nav_r .phone .erweima li {
         display: block;
         margin-top: 186px;
@@ -93,7 +95,9 @@ i {
         padding-top: 10px;
         top: 33px;
         width: 82px;
-        height: 46px; }
+        height: 46px;
+        z-index: 3;
+        background-color: white; }
         .nav_c .nav_r .sec .mytb a, .nav_c .nav_r .sec .favorite a {
           padding: 0;
           width: 82px;
@@ -104,6 +108,8 @@ i {
       .nav_c .nav_r .sec .merchant {
         display: none;
         position: absolute;
+        z-index: 3;
+        background-color: white;
         top: 33px;
         width: 142px;
         height: 159px;
@@ -130,6 +136,8 @@ i {
           border-bottom: 1px dashed #666666; }
       .nav_c .nav_r .sec .navg {
         position: absolute;
+        z-index: 3;
+        background-color: white;
         left: 26px;
         top: 33px;
         width: 1198px;

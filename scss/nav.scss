@@ -63,15 +63,19 @@ i{font-style: normal;}
             
         }
         .phone{
+
             .erweima{
                 border: 1px solid #eee;
                 position: absolute;
+                z-index: 3;
                 top: 26px;
                 margin-left: -50px;
                 width: 175px;
                 height: 227px;
                 background: url(../image/er.png) no-repeat;
                 display: none;
+                background-color: white;
+
                
                 li{
                     display: block;
@@ -81,6 +85,7 @@ i{font-style: normal;}
                     text-align: center;
                     color: #5b5b5b;
                     width: 100%;
+
                 }
                 p{
                      font-size: 16px;
@@ -88,6 +93,7 @@ i{font-style: normal;}
                     text-align: center;
                     color: #7f2b2b;
                     width: 100%;
+
                 }
             }
             &:hover{
@@ -112,9 +118,9 @@ i{font-style: normal;}
                 top: 33px;
                 width: 82px;
                 height: 46px;
-                hr{
-                   
-                }
+                z-index: 3;
+                background-color: white;
+              
                 // border: 1px solid #999;
                 a{
                 //  display: block;
@@ -129,6 +135,8 @@ i{font-style: normal;}
             .merchant{
                 display: none;
                 position: absolute;
+                z-index: 3;
+                background-color: white;
                 top: 33px;
                 // left: 0px;
                 width: 142px;
@@ -164,6 +172,8 @@ i{font-style: normal;}
             }
              .navg{
                 position: absolute;
+                z-index: 3;
+                background-color: white;
                 left: 26px;
                 top: 33px;
                 width: 1198px;
