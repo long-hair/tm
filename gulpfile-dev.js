@@ -12,7 +12,7 @@ task('delDist',async ()=>{
 
 // 处理图片
 task('image', async ()=>{
-  src('./image/*.*')
+  src('./image/**/*.*')
   .pipe(dest('./dist/image'))
   .pipe(load.connect.reload())
 })
@@ -33,6 +33,7 @@ task('scss', async ()=>{
 // 处理js
 task('script', async ()=>{
   src('./script/*.js')
+  // .pipe(load.babel({presets: ['@babel/env']}))
   .pipe(dest('./dist/script'))
   .pipe(load.connect.reload())
 })
@@ -50,14 +51,22 @@ task('swiper', async ()=>{
   .pipe(dest('./dist/swiper'))
   .pipe(load.connect.reload())
 })
+// 处理json数据
+task('json', async ()=>{
+  src('./json/*.*')
+  .pipe(dest('./dist/json'))
+  .pipe(load.connect.reload())
+})
 // 监听文件变化
 task('watch',async ()=>{
-  watch('./image/*.*',series('image'));
+  watch('./image/**/*.*',series('image'));
   watch('./scss/*.scss',series('scss'));
   watch('./script/*.js',series('script'));
   watch('./pages/*.html',series('html'));
   watch('./iconfont/*.*',series('icon'));
   watch('./swiper/*.*',series('swiper'));
+  watch('./json/*.*',series('json'));
+
 
 
 })
@@ -72,4 +81,4 @@ task('connect',async ()=>{
 })
 
 // 构建开发包
-task('dev',series('delDist','icon','swiper','image','scss','script','html','connect','watch'))
+task('dev',series('delDist','json','icon','swiper','image','scss','script','html','connect','watch'))

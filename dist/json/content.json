@@ -1,0 +1,60 @@
+{
+	"new_fashion":{	
+		"src":["../image/img1.webp","../image/img2.webp","../image/img3.webp",
+	"../image/img4.webp","../image/img5.webp"]
+	},
+	
+	"new_fashion_sec":{
+		
+		"c_title":["品牌闪购","聚名品","品牌活动"],
+		"e_title":["BRAND SALE","LUXURY CHANNEL","BARAND ACTIVITY"],
+		"src":["../image/img6.webp","../image/img7.webp","../image/img8.webp"]
+	},
+	"merchiandise_1":{
+		"title":["../image/img8.png","../image/tm1.png"],
+		"max":"../image/img9.jpg",
+		"more":"../image/more.png",
+		"box":["天猫超市","1499抢","飞天茅台"],
+		"double_src":["../image/img10.jpg","../image/img11.jpg"],
+		"double_1_text":["精选好纸","第2件0元"],
+		"double_2_text":["奶商伸伸腰","第2件0元"],
+		"src":["../image/img12.jpg","../image/img13.jpg","../image/img14.jpg","../image/img15.jpg","../image/img16.jpg","../image/img17.jpg"],
+		"text":["知乎婴儿洗衣液补充装500ml宝宝儿童衣","知乎婴儿洗衣液补充装500ml宝宝儿童衣","知乎婴儿洗衣液补充装500ml宝宝儿童衣","知乎婴儿洗衣液补充装500ml宝宝儿童衣","知乎婴儿洗衣液补充装500ml宝宝儿童衣","知乎婴儿洗衣液补充装500ml宝宝儿童衣"],
+		"price":["￥2.9","￥2.9","￥2.9","￥2.9","￥2.9","￥2.9"]
+	},
+	"merchiandise_2":[{
+		"src":"../image/tm4.jpg",
+		"title":"知乎婴儿洗衣液补充装500ml宝宝儿童衣",
+		"price":"￥2.9"
+	},{
+		"src":"../image/tm5.jpg",
+		"title":"知乎婴儿洗衣液补充装500ml宝宝儿童衣",
+		"price":"￥2.9"
+	},{
+		"src":"../image/tm6.jpg",
+		"title":"知乎婴儿洗衣液补充装500ml宝宝儿童衣",
+		"price":"￥2.9"
+	},{
+		"src":"../image/tm7.jpg",
+		"title":"知乎婴儿洗衣液补充装500ml宝宝儿童衣",
+		"price":"￥2.9"
+	},{
+		"src":"../image/tm8.jpg",
+		"title":"知乎婴儿洗衣液补充装500ml宝宝儿童衣",
+		"price":"￥2.9"
+	},{
+		"src":"../image/tm9.jpg",
+		"title":"知乎婴儿洗衣液补充装500ml宝宝儿童衣",
+		"price":"￥2.9"
+	},{
+		"src":"../image/tm10.jpg",
+		"title":"知乎婴儿洗衣液补充装500ml宝宝儿童衣",
+		"price":"￥2.9"
+	},{
+		"src":"../image/tm11.png",
+		"title":"知乎婴儿洗衣液补充装500ml宝宝儿童衣",
+		"price":"￥2.9"
+	}]
+
+
+}

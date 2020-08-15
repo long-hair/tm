@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+i {
+  text-decoration: none; }
+
+a {
+  text-decoration: none;
+  color: #999999; }
+
+.wrap {
+  width: calc(100% - 17px); }
+  .wrap .nav {
+    width: 100%;
+    height: 32px;
+    background-color: #f2f2f2;
+    border: 1px solid #e5e5e5; }
+  .wrap .header {
+    margin-top: 96px;
+    float: left;
+    width: 100%;
+    overflow: hidden; }

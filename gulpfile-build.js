@@ -12,7 +12,7 @@ task('delDist',async ()=>{
 
 // 处理图片
 task('image', async ()=>{
-  src('./image/*.*')
+  src('./image/**/*.*')
   .pipe(dest('./dist/image'))
 })
 
@@ -65,7 +65,11 @@ task('html', async ()=>{
   .pipe(load.minifyHtml())
   .pipe(dest('./dist/pages'))
 })
-
+//处理json数据
+task('json', async ()=>{
+  src('./json/*.*')
+  .pipe(dest('./dist/json'))
+})
 // 监听文件变化
 // task('watch',async ()=>{
 //   watch('./image/*.*',series('image'));
@@ -84,4 +88,4 @@ task('connect',async ()=>{
 })
 
 // 构建生产包
-task('build',series('delDist','swiper','icon','image','scss','script','html','connect'))
+task('build',series('delDist','json','swiper','icon','image','scss','script','html','connect'))

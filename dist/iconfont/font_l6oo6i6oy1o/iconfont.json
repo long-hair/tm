@@ -20,6 +20,13 @@
       "unicode_decimal": 58909
     },
     {
+      "icon_id": "523336",
+      "name": "右下三角",
+      "font_class": "youxiasanjiao-copy",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
       "icon_id": "847605",
       "name": "手机",
       "font_class": "shouji1",
@@ -34,11 +41,46 @@
       "unicode_decimal": 58625
     },
     {
+      "icon_id": "2263875",
+      "name": "主页",
+      "font_class": "shiliangzhinengduixiang",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "5389808",
+      "name": "店铺 选中",
+      "font_class": "dianpuxuanzhong",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "7994230",
+      "name": "店铺",
+      "font_class": "dianpu",
+      "unicode": "e542",
+      "unicode_decimal": 58690
+    },
+    {
       "icon_id": "8360648",
       "name": "鞋",
       "font_class": "xie",
       "unicode": "e50d",
       "unicode_decimal": 58637
+    },
+    {
+      "icon_id": "9802550",
+      "name": "升序",
+      "font_class": "shengxu",
+      "unicode": "e788",
+      "unicode_decimal": 59272
+    },
+    {
+      "icon_id": "10331687",
+      "name": "降序",
+      "font_class": "shengxu1",
+      "unicode": "e528",
+      "unicode_decimal": 58664
     },
     {
       "icon_id": "10332890",
@@ -48,11 +90,25 @@
       "unicode_decimal": 58635
     },
     {
+      "icon_id": "11015165",
+      "name": "降序",
+      "font_class": "jiangxu",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
       "icon_id": "12746611",
       "name": "导航",
       "font_class": "daohang",
       "unicode": "e64f",
       "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "14006744",
+      "name": "降序",
+      "font_class": "jiangxu1",
+      "unicode": "e7dd",
+      "unicode_decimal": 59357
     }
   ]
 }
