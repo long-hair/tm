@@ -138,6 +138,8 @@ if (window.location.search==="?c"){
             var newli = '';
             var newa = '';
             var newdiv = '';
+            var arr1 = json.list
+
             $.each(json.brand, function (index, con) {
                 newli += `
             <li><a href="">${con}</a></li>
@@ -148,7 +150,6 @@ if (window.location.search==="?c"){
                     <i class="cla">${item}</i>
             `
             })
-            var arr1 = json.list
             function newd(json) {
                 newdiv = '';
                 $.each(json, function (index, item) {
@@ -220,7 +221,9 @@ if (window.location.search==="?c"){
                 $('.active').removeClass('active');
                 $(this).addClass('active');
                 let _this = this;
-                let arr = json.list;
+                var str = JSON.stringify(json.list);
+                var str = JSON.parse(str);
+                let arr = str;
                 let tmp;
                 bubbleSort(arr);
                 function bubbleSort(arr) {
