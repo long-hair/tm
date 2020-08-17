@@ -1,4 +1,6 @@
-
+i{font-style: normal;}
+em{font-style: normal;}
+u{text-decoration: none;}
 .rel_wrap{
     position: relative;
     width: 100%;
@@ -40,7 +42,7 @@
 //放大镜
     
 .con{
-    position: relative;
+    // position: relative;
     width: 1230px;
     margin: 0 auto;
    min-height: 700px;
@@ -51,6 +53,7 @@
          border: 1px solid #eeeeee ;
          position: relative;
          padding-left: 51px;
+         float: left;
            video{
                cursor: pointer;
               
@@ -68,7 +71,8 @@
                  
                       z-index: 50;
                       position: absolute;
-                      right: 0px;
+                      right: 15px;
+                      color: white;
                       font-size: 30px;
                      display: block;
             }
@@ -134,6 +138,8 @@
     height: 58px;
     margin-top: 20px;
     padding-left: 60px;
+    position: absolute;
+    top: 630px;
     img{
         width: 45px;
         height: 60px;
@@ -155,3 +161,256 @@
     border: 2px solid #f3025b;
 }
 }
+.con_center{
+    float: left;
+    width: 528px;
+    overflow: hidden;
+    padding-left:20px;
+    .con_title{
+        width: 510px;
+        font-size:16px;
+    }
+    .trait{
+        font-size:12px;
+        line-height: 28px;
+        color: rgb(255,0,54);
+    }
+    .tmdq{
+        height: 18px;
+    }
+    .price{
+        overflow: hidden;
+        background-color: rgb(229,228,228);
+        li{
+            overflow: hidden;
+        }
+        label{
+            display: block;
+            float: left;
+            width:55px ;
+            height: 33px;
+            font-size: 12px;
+            line-height: 33px;
+            color: rgb(153,153,153);
+            text-indent: 7px;
+            margin-right: 32px;
+        }
+        del{
+
+            font-size: 12px;
+            line-height: 33px;
+            height: 33px;
+            color: rgb(51,51,51);
+        }
+        i{
+            font-size: 22px;
+            line-height: 33px;
+            color: rgb(255,0,54);
+            float: left;
+        }
+        .cx{
+            display: block;
+            float: left;
+            margin:9px 3px 8px;
+        }
+        em{
+            font-size: 12px;
+            line-height: 33px;
+            color:rgb(181,98,27);
+            float: left;
+        }
+        a{
+            cursor: pointer;
+            float: right;
+            margin-right: 10px;
+             font-size: 12px;
+            line-height: 33px;
+            color:rgb(181,98,27);
+            img{
+                display: block;
+                float: right;
+                margin-top:15px;
+                margin-left: 2px;
+            }
+
+        }
+    }
+    .freight{
+        width:100%;
+        overflow: hidden;
+        padding-top: 10px;
+        li{
+            overflow: hidden;
+            display: block;
+            border-bottom: 1px dashed rgb(201,201,201);
+            label{
+                    display: block;
+                    float: left;
+                    width:55px ;
+                    height: 36px;
+                    font-size: 12px;
+                    line-height: 36px;
+                    color: rgb(153,153,153);
+                    text-indent: 7px;
+                    margin-right: 32px;
+            }
+            p{
+                display: block;
+                float: left;
+                overflow: hidden;
+                font-size:12px ;
+                line-height: 36px;
+                color: rgb(51,51,51);
+                img{
+                    vertical-align: middle;
+                }
+            }
+            em{
+                display:block;
+                float: left;
+                width: 170px;
+                height: 36px;
+                line-height: 36px;
+                font-size: 12px;
+                color: rgb(153,153,153);
+                text-align: center;
+               
+                i{
+                    color: rgb(255,61,81);
+                    margin-left: 4px;
+                }
+                u{
+                    color: rgb(34,136,0);
+                    margin-left: 4px;
+
+                }
+
+            }
+             span{
+                    float: left;
+                    font-size: 16px;
+                    line-height: 36px;
+                    color: rgb(153,153,153);
+                }
+        }
+
+    }
+    .type{
+        .active{
+            border: 1px solid rgb(255,0,54);
+        }
+        li{
+            font-size: 12px;
+            overflow: hidden;
+            min-height: 36px;
+            line-height: 36px;
+            img{
+                display: block;
+                float: left;
+                height: 36px;
+
+            }
+            h1{
+                display: block;
+                float: left;
+                overflow: hidden;
+                max-width: 370px;
+                float: left;
+                font-size:12px;
+                font-weight: normal;
+            }
+            div{
+                cursor: pointer;
+                margin-top: 10px;
+                float: left;
+                padding: 0 10px;
+                margin-right: 6px;
+                border: 1px solid rgb(184,183,189);
+            }
+            label{
+                    display: block;
+                    margin-top: 10px;
+                    float: left;
+                    width:55px ;
+                    height: 100%;
+                    font-size: 12px;
+                    line-height: 36px;
+                    color: rgb(153,153,153);
+                    text-indent: 7px;
+                    margin-right: 32px;
+            }
+        }
+       
+    }
+    .btn{
+        overflow: hidden;
+        margin-left: 87px;
+        margin-top: 30px;
+        button{
+            cursor: pointer;
+            margin-right: 9px;
+             float: left;
+            width: 178px;
+            height: 38px;
+            outline: none;
+
+        }
+        .buy{
+            background-color: rgb(255,237,237);
+            border: 1px solid rgb(255,0,54);
+            color:rgb(255,0,54) ;
+        }
+        .car{
+            background-color:rgb(255,0,54) ;
+            color: white;
+            border: 1px solid rgb(255,0,54);
+        }
+    }
+     
+
+}
+.con_right{
+    float: left;
+    width: 200px;
+    height: 922px;
+    margin-left: 30px;
+    // margin-top: -20px;
+    position: relative;
+    .look{
+        width: 200px;
+        float: left;
+        overflow: hidden;
+        height: 15px;
+        margin-bottom: 10px;
+          s{
+        position: absolute;
+        width: 140px;
+        height: 0;
+        left: 30px;
+        top: 10px;
+       border-top: 1px #c9c9c9 dotted;
+    }
+    span{
+        display: block;
+        font-size: 12px;
+        position: absolute;
+        left: 75px;
+        top: 3px;
+        background-color: white;
+        line-height: 15px;
+        
+    }
+    }
+  
+}
+.swiper-container {
+    width: 200px;
+    height: 800px;
+    // margin-left: 30px;
+    img{
+        margin-left: 30px;
+        width: 140px;
+        height: 140px;
+        margin-bottom: 20px;
+    }
+}  

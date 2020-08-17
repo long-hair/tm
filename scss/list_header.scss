@@ -354,7 +354,9 @@
 .content_list{
     width: 1230px;
     margin: 0 auto;
+    overflow: hidden;
     .con_wrap{
+        overflow: hidden;
         width: 1260px;
          &>div{
             float: left;

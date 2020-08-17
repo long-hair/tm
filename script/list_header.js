@@ -1,5 +1,4 @@
 
-console.log(window.location.search)
 if (window.location.search==="?c"){
     $.ajax({
         type: 'get',
@@ -10,7 +9,6 @@ if (window.location.search==="?c"){
             var newa = '';
             var newdiv = '';
             var arr1 = json.list;
-
             $.each(json.brand, function (index, con) {
                 newli += `
             <li><a href="">${con}</a></li>
@@ -21,11 +19,12 @@ if (window.location.search==="?c"){
                     <i class='cla' >${item}</i>
             `
             })
+            //渲染初始商品
             function newd(json){
                 newdiv = '';
                 $.each(json, function (index, item) {
                     newdiv += `
-             <div>
+             <div nameid="${item.id}">
                 <img src="${item.src}" alt="">
                 <span class="price">
                     ${item.price}
@@ -52,14 +51,14 @@ if (window.location.search==="?c"){
             $('.classify_left').find('label').text('>' + ' ' + json.class);
             $('.classify_right').append(newa);
             $('.con_wrap').append(newdiv);
+            
             $('.classify_right').on('click','.cla',function(){
                 let _this =this;
                 newdiv = '';
-
                 $.each(json.list,function(index,item){
                     if(item.classify === $(_this).text()){
                         newdiv += `
-                        <div>
+                        <div nameid="${item.id}">
                             <img src="${item.src}" alt="">
                             <span class="price">
                                 ${item.price}
@@ -84,6 +83,9 @@ if (window.location.search==="?c"){
                 });
                 $('.con_wrap').empty();
                 $('.con_wrap').append(newdiv);
+                
+
+
                 
     
 
@@ -113,15 +115,24 @@ if (window.location.search==="?c"){
                 newd(arr);
                 $('.con_wrap').empty();
                 $('.con_wrap').append(newdiv);
-            })
+                
+
+            });
             $('.sizer').on('click', '.zh', function (){
                 $('.active').removeClass('active');
                 $(this).addClass('active');
                 newd(arr1);
                 $('.con_wrap').empty();
                 $('.con_wrap').append(newdiv);
+                
 
+
+            });
+            $('.con_wrap').on('click','div[nameid]',function(){
+
+                window.open('../pages/detail.html?'+$(this).attr('nameid'));
             })
+            // $('.content_list').on('click',)
 
         },
         error: function () {
@@ -150,11 +161,12 @@ if (window.location.search==="?c"){
                     <i class="cla">${item}</i>
             `
             })
+            //渲染初始商品
             function newd(json) {
                 newdiv = '';
                 $.each(json, function (index, item) {
                     newdiv += `
-             <div>
+             <div nameid="${item.id}">
                 <img src="${item.src}" alt="">
                 <span class="price">
                     ${item.price}
@@ -188,7 +200,7 @@ if (window.location.search==="?c"){
                 $.each(json.list, function (index, item) {
                     if (item.classify === $(_this).text()) {
                         newdiv += `
-                        <div>
+                        <div nameid="${item.id}">
                             <img src="${item.src}" alt="">
                             <span class="price">
                                 ${item.price}
@@ -251,6 +263,10 @@ if (window.location.search==="?c"){
                 $('.con_wrap').append(newdiv);
 
             });
+            $('.con_wrap').on('click', 'div[nameid]', function () {
+
+                window.open('../pages/detail.html?' + $(this).attr('nameid'));
+            })
 
         },
         error: function () {

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- <div class="nav"></div> -->
+        <div class="header">
+            <a href=""><img src="../image/login/img2.png" alt=""></a>
+        </div>
+        <div class="content">
+            <div class="c_wrap">
+                <div class="login">
+                    <img class="sm" src="../image/login/sm.png"alt="">
+                    <img class="er" src="../image/login/er.png" alt="">
+                    <div class="box">
+                        <span class="active">密码登录</span>
+                        <span>短信登录</span>
+                        <div class="f">
+                            <input class="user" name="userid" type="text" placeholder="会员名/邮箱/手机号">
+                            <input class="pas" name='password' type="text" placeholder="会请输入登录密码">
+                            <button class="btn">登录</button>
+                            <div class="register">
+                                <li><a href="">忘记密码</a></li>
+                                <li><a href="">忘记用户名</a></li>
+                                <li><a href="">免费注册</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <h3>手机扫码，安全登录</h3>
+                        <img src="../image/login/ewm.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <script src="../script/jquery-3.4.1.min.js"></script>
+    <script src="../script/login.js"></script>
+    <script>
+        // $('.nav').load('./nav.html')
+        // $('.header').load('./header.html')
+        // $('.content').load('./content.html')
+        $('.bottom').load('./bottom.html')
+    </script>
+</body>
+
+</html>

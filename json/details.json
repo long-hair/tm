@@ -1,0 +1,27 @@
+{
+	"j1":{
+		"title":"一【2020版新品】联想小新 Pro13 2020 13.3英寸超轻薄笔记本电脑 学生网课办公本 可选R5 4600U/16G/512G",
+		"trait":"一16G大内存+512G打鼓台+QHD高分屏",
+		"price1":"￥4898.00",
+		"price2":"￥4698.00",
+		"activity":"一满4399元减200元",
+		"srcmin":["../image/detail/a1min.jpg","../image/detail/a2min.jpg","../image/detail/a3min.jpg",
+			"../image/detail/a4min.jpg","../image/detail/a5min.jpg"],
+		"src":["../image/detail/a1.jpg","../image/detail/a2.jpg","../image/detail/a3.jpg","../image/detail/a4.jpg","../image/detail/a5.jpg"],
+		"srcmax":["../image/detail/a1max.jpg","../image/detail/a2max.jpg","../image/detail/a3max.jpg","../image/detail/a4max.jpg","../image/detail/a5max.jpg"],
+		"banner":["../image/detail/r1.jpg","../image/detail/r2.jpg","../image/detail/r3.jpg","../image/detail/r4.jpg","../image/detail/r5.jpg","../image/detail/r6.jpg","../image/detail/r7.jpg","../image/detail/r8.jpg","../image/detail/r9.jpg","../image/detail/r10.jpg"]
+	},
+	"c1":{
+		"title":"二【2020版新品】联想小新 Pro13 2020 13.3英寸超轻薄笔记本电脑 学生网课办公本 可选R5 4600U/16G/512G",
+		"trait":"二16G大内存+512G打鼓台+QHD高分屏",
+		"price1":"￥4898.00",
+		"price2":"￥4698.00",
+		"activity":"二满4399元减200元",
+		"srcmin":["../image/detail/a5min.jpg","../image/detail/a4min.jpg","../image/detail/a3min.jpg",
+			"../image/detail/a2min.jpg","../image/detail/a1min.jpg"],
+		"src":["../image/detail/a5.jpg","../image/detail/a4.jpg","../image/detail/a3.jpg","../image/detail/a2.jpg","../image/detail/a1.jpg"],
+		"srcmax":["../image/detail/a5max.jpg","../image/detail/a4max.jpg","../image/detail/a3max.jpg","../image/detail/a2max.jpg","../image/detail/a1max.jpg"],
+		"banner":["../image/detail/r1.jpg","../image/detail/r2.jpg","../image/detail/r3.jpg","../image/detail/r4.jpg","../image/detail/r5.jpg","../image/detail/r6.jpg","../image/detail/r7.jpg","../image/detail/r8.jpg","../image/detail/r9.jpg","../image/detail/r10.jpg"]
+
+	}
+}

@@ -277,8 +277,10 @@
 
 .content_list {
   width: 1230px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
   .content_list .con_wrap {
+    overflow: hidden;
     width: 1260px; }
     .content_list .con_wrap > div {
       float: left;

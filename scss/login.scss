@@ -1,0 +1,142 @@
+    *{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: #999999;}
+.wrap{
+    width: 100%;
+    overflow: hidden;
+    .header{
+        width: 1190px;
+        margin:0 auto;
+        height: 88px;
+        a{
+            display: block;
+            float: left;
+            img{
+                display: block;
+                float: left;
+                
+            }
+        }
+    }
+    .content{
+        width: 100%;
+        overflow: hidden;
+        background-color: rgb(138,3,9);
+        .c_wrap{
+            position: relative;
+            width: 1190px;
+            margin: 0 auto;
+            height: 600px;
+            background: url(../image/login/bg.jpg) no-repeat;
+             .login{
+                 position: absolute;
+                 right: 0px;
+                 top:80px;
+                 width: 300px;
+                 height: 302px;
+                 padding:25px 25px 23px ;
+                 background-color: white;
+                 .sm{
+                     position: absolute;
+                     right: 52px;
+                     top: 0;
+                 }
+                 .er{
+                     cursor: pointer;
+                     position: absolute;
+                     right: 0px;
+                     top: 0px;
+                 }
+                 .box{
+                     width: 300px;
+                     height: 247px;
+                     .register{
+                         width: 190px;
+                         float: right;
+                         overflow: hidden;
+                         margin-top: 20px;
+                         a{
+                             display: block;
+                             float: left;
+                             font-size: 12px;
+                             line-height: 16px;
+                             color: #6c6c6c;
+                             margin-left: 10px;
+                         }
+                     }
+                     .active{
+                         border-bottom: 2px solid #000 ;
+                     }
+                     span{
+                         cursor: pointer;
+                         width:65px;
+                         height: 26px;
+                         border-bottom: 2px solid white;
+                         margin-right: 10px;
+                     }
+                     .user{
+                         border: 1px solid rgb(241,238,238);
+                         width: 300px;
+                         display: block;
+                         height: 40px;
+                         background: url(../image/login/u.png) no-repeat;
+                         text-indent: 50px;
+                         outline-color: rgb(255,0,54);
+                         font-size: 16px;
+                         line-height: 24px;
+                         margin-top: 20px;
+                         &:hover{
+                             border: 1px solid rgb(255,0,54);
+                         }
+                     }
+                     .btn{
+                         cursor: pointer;
+                         list-style-type: none;
+                         margin-top: 20px;
+                         width: 298px;
+                         height: 42px;
+                         text-align: center;
+                         background-color: rgb(255,0,54);
+                         font-size: 14px;
+                         color: white;outline: none;
+                         border: 0px ;
+                        //  border-radius: 5px;
+                     }
+                     .pas{
+                         margin-top: 20px;
+
+                         border: 1px solid rgb(241,238,238);
+                         width: 300px;
+                         display: block;
+                         height: 40px;
+                         background: url(../image/login/p.png) no-repeat;
+                         text-indent: 50px;
+                         outline-color: rgb(255,0,54);
+                         font-size: 16px;
+                         line-height: 24px;
+                          &:hover{
+                             border: 1px solid rgb(255,0,54);
+                         }
+                     }
+
+                 }
+             }
+        }
+    }
+
+    .bottom{
+        width: 100%;
+         border-top: 1px solid #6666;
+         margin-top: 50px;
+         border-top: 0;
+         .bt_wrap{
+             background-color: white;
+             border-top: 0;
+         }
+         .bottom_wrap{
+             display: none;
+            
+         }
+
+    }
+}
