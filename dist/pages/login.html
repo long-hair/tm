@@ -23,19 +23,34 @@
                         <span class="active">密码登录</span>
                         <span>短信登录</span>
                         <div class="f">
-                            <input class="user" name="userid" type="text" placeholder="会员名/邮箱/手机号">
-                            <input class="pas" name='password' type="text" placeholder="会请输入登录密码">
+                            <input class="user logid" name="userid" type="text" placeholder="会员名/邮箱/手机号">
+                            <input class="pas logpas" name='password' type="text" placeholder="会请输入登录密码">
                             <button class="btn">登录</button>
                             <div class="register">
                                 <li><a href="">忘记密码</a></li>
                                 <li><a href="">忘记用户名</a></li>
-                                <li><a href="">免费注册</a></li>
+                                <li class="zc"><a href="#">免费注册</a></li>
                             </div>
                         </div>
                     </div>
                     <div class="box2">
                         <h3>手机扫码，安全登录</h3>
                         <img src="../image/login/ewm.png" alt="">
+                        <div class="hint">
+                            <img src="../image/login/sao.png" alt="">
+                            <div class="">
+                                <li>打开 <a href="">手机淘宝</a><span>|</span><a href="">手机天猫</a></li>
+                                <li>扫一扫登录</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box3">
+                        <div class="f">
+                            <input class="user zcid" name="userid" type="text" placeholder="请输入注册账号">
+                            <input class="pas zcpas" name='password' type="text" placeholder="请输入注册密码">
+                            <button class="btnc">注册
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,11 +59,13 @@
     </div>
     <script src="../script/jquery-3.4.1.min.js"></script>
     <script src="../script/login.js"></script>
+    <script src="../script/detail.js"></script>
     <script>
         // $('.nav').load('./nav.html')
         // $('.header').load('./header.html')
         // $('.content').load('./content.html')
-        $('.bottom').load('./bottom.html')
+        $('.bottom').load('./bottom.html');
+       
     </script>
 </body>
 

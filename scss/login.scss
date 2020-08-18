@@ -9,6 +9,7 @@ a{text-decoration: none; color: #999999;}
         margin:0 auto;
         height: 88px;
         a{
+            margin-top: 22px;
             display: block;
             float: left;
             img{
@@ -47,7 +48,10 @@ a{text-decoration: none; color: #999999;}
                      right: 0px;
                      top: 0px;
                  }
-                 .box{
+                 .box3{
+                     display: none;
+                 }
+                 .box ,.box3{
                      width: 300px;
                      height: 247px;
                      .register{
@@ -89,7 +93,7 @@ a{text-decoration: none; color: #999999;}
                              border: 1px solid rgb(255,0,54);
                          }
                      }
-                     .btn{
+                     .btnc,.btn{
                          cursor: pointer;
                          list-style-type: none;
                          margin-top: 20px;
@@ -139,4 +143,43 @@ a{text-decoration: none; color: #999999;}
          }
 
     }
+}
+.box2{
+    display: none;
+   &>img{
+            display: block;
+            width: 140px;
+            margin: 45px auto 20px;
+             }
+    h3{
+        font-size:16px;
+        font-weight: normal;
+    } 
+    .hint{
+            width: 182px;
+            margin: 0 auto;
+        img{
+            width: 32px;
+            height: 32px;
+            float: left;
+            margin-right: 10px;
+        }
+            
+             div{
+                 overflow: hidden;
+                 li{
+                    font-size: 12px;
+                    a{
+                        font-size: 12px;
+                        color: rgb(255,0,54);
+                    }
+                 }
+                 span{
+                     color: rgb(108,108,108);
+                     margin-left: 3px;
+                     margin-right: 3px;
+                 }
+             }
+    }  
+    
 }

@@ -24,7 +24,7 @@ task('icon', async ()=>{
 })
 // 处理scss
 task('scss', async ()=>{
-  src('./scss/*.scss')
+  src('./scss/*.*')
   .pipe(load.sass())
   .pipe(dest('./dist/css'))
   .pipe(load.connect.reload())
@@ -60,7 +60,7 @@ task('json', async ()=>{
 // 监听文件变化
 task('watch',async ()=>{
   watch('./image/**/*.*',series('image'));
-  watch('./scss/*.scss',series('scss'));
+  watch('./scss/*.*',series('scss'));
   watch('./script/*.js',series('script'));
   watch('./pages/*.html',series('html'));
   watch('./iconfont/*.*',series('icon'));

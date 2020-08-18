@@ -17,6 +17,7 @@ a {
     margin: 0 auto;
     height: 88px; }
     .wrap .header a {
+      margin-top: 22px;
       display: block;
       float: left; }
       .wrap .header a img {
@@ -49,30 +50,32 @@ a {
           position: absolute;
           right: 0px;
           top: 0px; }
-        .wrap .content .c_wrap .login .box {
+        .wrap .content .c_wrap .login .box3 {
+          display: none; }
+        .wrap .content .c_wrap .login .box, .wrap .content .c_wrap .login .box3 {
           width: 300px;
           height: 247px; }
-          .wrap .content .c_wrap .login .box .register {
+          .wrap .content .c_wrap .login .box .register, .wrap .content .c_wrap .login .box3 .register {
             width: 190px;
             float: right;
             overflow: hidden;
             margin-top: 20px; }
-            .wrap .content .c_wrap .login .box .register a {
+            .wrap .content .c_wrap .login .box .register a, .wrap .content .c_wrap .login .box3 .register a {
               display: block;
               float: left;
               font-size: 12px;
               line-height: 16px;
               color: #6c6c6c;
               margin-left: 10px; }
-          .wrap .content .c_wrap .login .box .active {
+          .wrap .content .c_wrap .login .box .active, .wrap .content .c_wrap .login .box3 .active {
             border-bottom: 2px solid #000; }
-          .wrap .content .c_wrap .login .box span {
+          .wrap .content .c_wrap .login .box span, .wrap .content .c_wrap .login .box3 span {
             cursor: pointer;
             width: 65px;
             height: 26px;
             border-bottom: 2px solid white;
             margin-right: 10px; }
-          .wrap .content .c_wrap .login .box .user {
+          .wrap .content .c_wrap .login .box .user, .wrap .content .c_wrap .login .box3 .user {
             border: 1px solid #f1eeee;
             width: 300px;
             display: block;
@@ -83,9 +86,9 @@ a {
             font-size: 16px;
             line-height: 24px;
             margin-top: 20px; }
-            .wrap .content .c_wrap .login .box .user:hover {
+            .wrap .content .c_wrap .login .box .user:hover, .wrap .content .c_wrap .login .box3 .user:hover {
               border: 1px solid #ff0036; }
-          .wrap .content .c_wrap .login .box .btn {
+          .wrap .content .c_wrap .login .box .btnc, .wrap .content .c_wrap .login .box .btn, .wrap .content .c_wrap .login .box3 .btnc, .wrap .content .c_wrap .login .box3 .btn {
             cursor: pointer;
             list-style-type: none;
             margin-top: 20px;
@@ -97,7 +100,7 @@ a {
             color: white;
             outline: none;
             border: 0px; }
-          .wrap .content .c_wrap .login .box .pas {
+          .wrap .content .c_wrap .login .box .pas, .wrap .content .c_wrap .login .box3 .pas {
             margin-top: 20px;
             border: 1px solid #f1eeee;
             width: 300px;
@@ -108,7 +111,7 @@ a {
             outline-color: #ff0036;
             font-size: 16px;
             line-height: 24px; }
-            .wrap .content .c_wrap .login .box .pas:hover {
+            .wrap .content .c_wrap .login .box .pas:hover, .wrap .content .c_wrap .login .box3 .pas:hover {
               border: 1px solid #ff0036; }
   .wrap .bottom {
     width: 100%;
@@ -120,3 +123,32 @@ a {
       border-top: 0; }
     .wrap .bottom .bottom_wrap {
       display: none; }
+
+.box2 {
+  display: none; }
+  .box2 > img {
+    display: block;
+    width: 140px;
+    margin: 45px auto 20px; }
+  .box2 h3 {
+    font-size: 16px;
+    font-weight: normal; }
+  .box2 .hint {
+    width: 182px;
+    margin: 0 auto; }
+    .box2 .hint img {
+      width: 32px;
+      height: 32px;
+      float: left;
+      margin-right: 10px; }
+    .box2 .hint div {
+      overflow: hidden; }
+      .box2 .hint div li {
+        font-size: 12px; }
+        .box2 .hint div li a {
+          font-size: 12px;
+          color: #ff0036; }
+      .box2 .hint div span {
+        color: #6c6c6c;
+        margin-left: 3px;
+        margin-right: 3px; }

@@ -76,13 +76,72 @@ $.ajax({
                 </ul>
                 <div class="btn">
                     <button class="buy">立即购买</button>
-                    <button class="car">加入购物车</button>
+                    <button sid="${v.id}" class="car">加入购物车</button>
                 </div>
-        `
+        `;
                 $('.con_center').append(newa);
                 $('.type').on('click', 'div', function () {
                     $(this).addClass('active');
                     $(this).siblings('.active').removeClass('active');
+                });
+                $('.con_center').on('click','.car',function(){
+                    var _this = this;
+                        var len = localStorage.length;
+                        var p = true;
+                        var a = '';
+                        var arr = '';
+                    if (!localStorage.getItem(n[1])){
+                             a = [{'cid':$(_this).attr('sid'),"num":1}];
+                           var  b= JSON.stringify(a);
+                            localStorage.setItem(n[1], b);
+                        }else{
+                         arr = JSON.parse(localStorage.getItem(n[1]));
+                        console.log(arr);
+
+                        $.each(arr,function(i,v){
+                            console.log(v.cid,$(_this).attr('sid'))
+                               if (v.cid == $(_this).attr('sid')){
+                                p =false;
+                                v.num = ++v.num;
+                               }
+                               var c = JSON.stringify(arr);
+                            localStorage.setItem(n[1], c);
+                           });
+                           if(p){
+                               arr.push({ 'cid': $(_this).attr('sid'), "num": 1 });
+                            var d = JSON.stringify(arr);
+                               localStorage.setItem(n[1], d);
+                           }
+
+
+                        }
+
+
+
+
+
+                        location.reload();
+
+                    // var len = localStorage.length;
+                    // console.log(len)
+                    // for(var i = 0;i<len;i++){
+                    //     var str = localStorage.getItem(localStorage.key(i)).split(',');
+                    //     str = JSON.parse(str);
+                    //     console.log(str[0].code, $('.car').attr('sid'))
+                    //     if (str[0].code == $('.car').attr('sid')){
+                    //         var j = str[0].num;
+                    //          j++;
+                    //         var a = JSON.stringify([{ "code": $('.car').attr('sid'), "num": j }]);
+                    //         localStorage.setItem('sid',a);
+
+                    //     }else{
+                    //         console.log(2)
+                    //          var b = JSON.stringify([{ "code": $('.car').attr('sid'), "num": 1 }]);
+                    //         localStorage.setItem('sid', b);
+                    //     }
+
+
+                    // }
                 });
 
 

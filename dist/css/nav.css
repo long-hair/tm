@@ -34,6 +34,49 @@ i {
         color: #ff0036; }
   .nav_c .nav_r {
     float: right; }
+    .nav_c .nav_r .scar {
+      position: relative; }
+      .nav_c .nav_r .scar:hover .mycar {
+        display: block; }
+      .nav_c .nav_r .scar .mycar {
+        display: none;
+        border: 1px solid lavender;
+        width: 400px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 500;
+        top: 30px;
+        background-color: white; }
+        .nav_c .nav_r .scar .mycar div {
+          float: left;
+          margin-top: 30px; }
+          .nav_c .nav_r .scar .mycar div span {
+            cursor: pointer;
+            width: 10px;
+            text-align: center;
+            border: 1px solid lavender; }
+        .nav_c .nav_r .scar .mycar li {
+          overflow: hidden;
+          margin-top: 20px; }
+          .nav_c .nav_r .scar .mycar li > span {
+            margin-top: 30px; }
+          .nav_c .nav_r .scar .mycar li > i {
+            margin-top: 30px;
+            margin-right: 15px; }
+          .nav_c .nav_r .scar .mycar li button {
+            width: 50px;
+            height: 30px;
+            border: 0;
+            outline: none;
+            margin-top: 30px;
+            background-color: red;
+            color: white;
+            border-radius: 5px; }
+        .nav_c .nav_r .scar .mycar img {
+          float: left;
+          width: 100px;
+          height: 100px;
+          margin-right: 20px; }
     .nav_c .nav_r li {
       margin-right: 12px;
       float: left; }
