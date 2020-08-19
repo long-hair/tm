@@ -90,8 +90,13 @@ $('.btn').on('click', function () {
         dataType: 'json',
         success: function (data) {
             if (!localStorage.getItem('user')){
-                localStorage.setItem('user', [1, $('.logid').val(), $('.logpas').val()]);
                 alert(data.msg);
+                if (data.err == -1) {
+                    return;
+                }     
+                localStorage.setItem('user', [1, $('.logid').val(), $('.logpas').val()]);
+                window.open('../pages/index.html?' + $('.logid').val());
+
             }else{
                 if (localStorage.getItem('user').split(',')[1] == $('.logid').val()) {
                     alert('请勿重复登录！')
@@ -99,14 +104,13 @@ $('.btn').on('click', function () {
                     alert('您当前已存在登录账户，即将为您跳转到主页面!');
                     window.open('../pages/index.html?' + $('.logid').val());
                 }
-                console.log(1);
+                window.open('../pages/index.html?' + $('.logid').val());
+
             }
             if (data.err == -1) {
                 alert(data.msg);
                 return;
-            };
-          
-           
+            };     
 
         },
         error: function (status) {

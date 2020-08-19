@@ -7,6 +7,7 @@ if (!localStorage.getItem('user')){
     var n = localStorage.getItem('user').split(',');
     if (n[0] == 1) {
         $('.a1').text(n[1]);
+        $('.a1').attr('href', '#');
         $('.a2').text('退出').attr('href', '#');
         $('.a2').on('click', function () {
             localStorage.removeItem('user');
