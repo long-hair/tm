@@ -1,4 +1,11 @@
+var n = localStorage.getItem('user');
+if(!n){
+    n = [0,'sid'];
+}
+else{
+    n = n.split(',');
 
+}
 
 $.ajax({
     type: 'get',
@@ -96,14 +103,11 @@ $.ajax({
                             localStorage.setItem(n[1], b);
                         }else{
                          arr = JSON.parse(localStorage.getItem(n[1]));
-                        console.log(arr);
-
                         $.each(arr,function(i,v){
-                            console.log(v.cid,$(_this).attr('sid'))
                                if (v.cid == $(_this).attr('sid')){
                                 p =false;
                                 v.num = ++v.num;
-                               }
+                               };
                                var c = JSON.stringify(arr);
                             localStorage.setItem(n[1], c);
                            });
@@ -111,37 +115,10 @@ $.ajax({
                                arr.push({ 'cid': $(_this).attr('sid'), "num": 1 });
                             var d = JSON.stringify(arr);
                                localStorage.setItem(n[1], d);
-                           }
+                           };
+                        };
+                       location.reload();
 
-
-                        }
-
-
-
-
-
-                        location.reload();
-
-                    // var len = localStorage.length;
-                    // console.log(len)
-                    // for(var i = 0;i<len;i++){
-                    //     var str = localStorage.getItem(localStorage.key(i)).split(',');
-                    //     str = JSON.parse(str);
-                    //     console.log(str[0].code, $('.car').attr('sid'))
-                    //     if (str[0].code == $('.car').attr('sid')){
-                    //         var j = str[0].num;
-                    //          j++;
-                    //         var a = JSON.stringify([{ "code": $('.car').attr('sid'), "num": j }]);
-                    //         localStorage.setItem('sid',a);
-
-                    //     }else{
-                    //         console.log(2)
-                    //          var b = JSON.stringify([{ "code": $('.car').attr('sid'), "num": 1 }]);
-                    //         localStorage.setItem('sid', b);
-                    //     }
-
-
-                    // }
                 });
 
 
@@ -240,7 +217,7 @@ $.ajax({
                         }
                         else {
                             return { 'left': x - l, 'top': y - t }
-                        }
+                        };
                     };
                     //移出
                     Ms.prototype.move_leave = function () {
@@ -248,7 +225,7 @@ $.ajax({
                         this.left.onmouseleave = function () {
                             _this.pro_change(_this.mask, 'display', 'none');
                             _this.pro_change(_this.right, 'display', 'none');
-                        }
+                        };
                     };
                     function fac(option) {
                         return new Ms(option)
@@ -267,7 +244,7 @@ $.ajax({
                         for (var i = 0; i < ac.length; i++) {
                             ac[i].index = i + 1;
                             ac[i].className = 'hover';
-                        }
+                        };
                         this.className += ' ' + 'active';
                         artwork_img.src = sr +'.jpg';
                         magnify_img.src = sr +'max.jpg';
@@ -318,22 +295,13 @@ $.ajax({
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
                     },
-
-
-                })  
-               
-
-
-
-
-
-
-            }
+                }); 
+            };
 
         });
       
     },
     error:function(){
-        alert('错误')
+        alert('错误');
     }
 });

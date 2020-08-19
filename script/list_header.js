@@ -138,7 +138,7 @@ if (window.location.search==="?c"){
         error: function () {
             console.log('错误');
         }
-    })
+    });
 }else{
 
     $.ajax({
@@ -154,13 +154,13 @@ if (window.location.search==="?c"){
             $.each(json.brand, function (index, con) {
                 newli += `
             <li><a href="">${con}</a></li>
-           `
-            })
+           `;
+            });
             $.each(json.classify, function (index, item) {
                 newa += `
                     <i class="cla">${item}</i>
-            `
-            })
+            `;
+            });
             //渲染初始商品
             function newd(json) {
                 newdiv = '';
@@ -185,9 +185,9 @@ if (window.location.search==="?c"){
 
         </div>
             
-            `
-                })
-            }
+            `;
+                });
+            };
             newd(arr1);
             $('.brand_center').append(newli);
             $('.classify_left').find('label').text('>' + ' ' + json.class);
@@ -218,17 +218,13 @@ if (window.location.search==="?c"){
                             </div>
 
                     </div>
-                        
-            `
-                    }
+            `;
+                    };
 
                 });
                 $('.con_wrap').empty();
                 $('.con_wrap').append(newdiv);
-
-
-
-            })
+            });
             $('.sizer').on('click', '.price', function () {
                 $('.active').removeClass('active');
                 $(this).addClass('active');
@@ -246,9 +242,9 @@ if (window.location.search==="?c"){
                                 var tmp = arr[i];
                                 arr[i] = arr[i + 1];
                                 arr[i + 1] = tmp;
-                            }
-                        }
-                    }
+                            };
+                        };
+                    };
                     return arr;
                 };
                 newd(arr);
@@ -266,12 +262,12 @@ if (window.location.search==="?c"){
             $('.con_wrap').on('click', 'div[nameid]', function () {
 
                 window.open('../pages/detail.html?' + $(this).attr('nameid'));
-            })
+            });
 
         },
         error: function () {
             console.log('错误');
         }
-    })
+    });
 
-}
+};

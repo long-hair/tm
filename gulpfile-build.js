@@ -57,13 +57,21 @@ task('script', async ()=>{
   .pipe(load.rev.manifest())
   .pipe(dest('./rev/js'))
 })
-
+//字体
+task('icon', async ()=>{
+  src('./iconfont/**/*.*')
+  .pipe(dest('./dist/iconfont'))
+  .pipe(load.connect.reload())
+})
 // 处理html
 task('html', async ()=>{
-  src(['./rev/**/*.json','./pages/*.html'])
-  .pipe(load.revCollector({replaceReved:true}))
-  .pipe(load.minifyHtml())
-  .pipe(dest('./dist/pages'))
+  setTimeout(() => {
+      src(['./rev/**/*.json', './pages/*.html'])
+       .pipe(load.revCollector({ replaceReved: true }))
+      .pipe(load.minifyHtml())
+      .pipe(dest('./dist/pages'))
+  }, 4000);
+
 })
 //处理json数据
 task('json', async ()=>{

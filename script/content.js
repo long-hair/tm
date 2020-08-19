@@ -33,10 +33,9 @@ $.ajax({
     success: function(json){
         let len1 = json.new_fashion.src.length;
         var newli = '';
-        let newli_2 = ``
+        let newli_2 = '';
 
         for(let i=0;i<len1;i++){
-            console.log(json.new_fashion.src[i]);
             newli+=`
              <li>
                 <a href="">
@@ -44,8 +43,8 @@ $.ajax({
                     <div class="mask"></div>
                 </a>
             </li>
-            `
-        }
+            `;
+        };
 
     
            let  newdiv = `
@@ -110,7 +109,7 @@ $.ajax({
                             </div>
                         </div>
                     </div>
-            `
+            `;
             let len3 = json.merchiandise_1.src.length;
             for(var i =0;i<len3;i++){
                 newul_1 +=`
@@ -123,8 +122,8 @@ $.ajax({
         
                         </a>
                     </li>
-                `
-            }
+                `;
+            };
             let len4 = json.merchiandise_2.length;
             for(var i =0;i<len4;i++){
                 newli_2 +=`
@@ -137,8 +136,8 @@ $.ajax({
                 
                                 </a>
                             </li>
-                `
-            }
+                `;
+            };
         $('.new_fashion').append(newli);
         $('.new_fashion_sec').append(newdiv);
         $('.merchandise').eq(0).append(newle);

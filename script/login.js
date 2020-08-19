@@ -16,11 +16,9 @@ $('.er').on('click',function(){
     }
 });
 $('.box').on('click','span',function(){
-    console.log(this);
-    console.log($(this).siblings('active'));
     $(this).addClass('active');
     $(this).siblings('.active').removeClass('active')
-})
+});
 $('.f').on('blur','.user',function(){
     var reg1 = /\d{8}/;
     
@@ -29,7 +27,7 @@ $('.f').on('blur','.user',function(){
         } else {
             console.log(2);
         }
-})
+});
 
 $('.f').on('blur', '.pas', function () {
    
@@ -40,11 +38,11 @@ $('.f').on('blur', '.pas', function () {
     } else {
         console.log(2);
     }
-})
+});
 $('.zc').on('click',function(){
     $('.box').css('display','none');
     $('.box3').css('display','block');
-})
+});
 //注册
 $('.btnc').on('click',function(){
     // $('.box3').css('display', 'none');
@@ -71,7 +69,7 @@ $('.btnc').on('click',function(){
         error: function (status) {
             alert('提交失败');
         }
-    })
+    });
 });
 //登录
 $('.btn').on('click', function () {
@@ -91,21 +89,32 @@ $('.btn').on('click', function () {
         },
         dataType: 'json',
         success: function (data) {
-            alert(data.msg);
-            localStorage.setItem('user', [1, $('.logid').val(), $('.logpas').val()]);
-            if(data.err == -1){
-                return;
+            if (!localStorage.getItem('user')){
+                localStorage.setItem('user', [1, $('.logid').val(), $('.logpas').val()]);
+                alert(data.msg);
+            }else{
+                if (localStorage.getItem('user').split(',')[1] == $('.logid').val()) {
+                    alert('请勿重复登录！')
+                }else{
+                    alert('您当前已存在登录账户，即将为您跳转到主页面!');
+                    window.open('../pages/index.html?' + $('.logid').val());
+                }
+                console.log(1);
             }
-            window.open('../pages/index.html?'+$('.logid').val());
+            if (data.err == -1) {
+                alert(data.msg);
+                return;
+            };
+          
            
 
         },
         error: function (status) {
             alert('提交失败');
         }
-    })
+    });
 
 
-})
+});
 
 
