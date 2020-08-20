@@ -34,7 +34,7 @@ a{text-decoration: none; color: #999999;}
                  right: 0px;
                  top:80px;
                  width: 300px;
-                 height: 302px;
+                 height: 352px;
                  padding:25px 25px 23px ;
                  background-color: white;
                  .sm{
@@ -52,6 +52,7 @@ a{text-decoration: none; color: #999999;}
                      display: none;
                  }
                  .box ,.box3{
+                     padding-top: 30px;
                      width: 300px;
                      height: 247px;
                      .register{
@@ -182,4 +183,18 @@ a{text-decoration: none; color: #999999;}
              }
     }  
     
+}
+.tishi{
+    i{font-style: normal;}
+    display: none;
+    img{float: left;}
+    margin-top: 20px;
+    color: rgb(109,109,109);
+    background: rgb(254,242,242);
+    border: 1px solid rgb(250,204,198);
+    width: 306px;
+    height: 30px;
+    line-height: 30px;
+    // text-indent: ;
+
 }

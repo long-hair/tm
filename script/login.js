@@ -1,3 +1,6 @@
+var ts = $('.tishi');
+var tsi = $('.tishi').find('i');
+
 $('.er').on('click',function(){
     if ($(".er").attr('src') === "../image/login/er.png"){
         $('.er')[0].src = "../image/login/dn.png" ;
@@ -5,12 +8,15 @@ $('.er').on('click',function(){
         $('.box').css('display','none');
         $('.box2').css('display','block');
         $('.box3').css('display','none');
+        ts.css('display','none');
     }else{
         $('.er')[0].src = "../image/login/er.png";
         $('.sm').css('display', 'block');
         $('.box').css('display', 'block');
         $('.box2').css('display', 'none');
         $('.box3').css('display', 'none');
+        ts.css('display', 'none');
+
 
 
     }
@@ -21,11 +27,12 @@ $('.box').on('click','span',function(){
 });
 $('.f').on('blur','.user',function(){
     var reg1 = /\d{8}/;
-    
-        if (reg1.test($('.user').val())) {
-            console.log(1);
+        if (reg1.test($(this).val())) {
+            ts.css('display', 'none');
+
         } else {
-            console.log(2);
+            ts.css('display', 'block');
+            tsi.text('请输入8位纯数字！');
         }
 });
 
@@ -33,24 +40,27 @@ $('.f').on('blur', '.pas', function () {
    
     var reg2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{8,16}$/;
 
-    if (reg2.test($('.pas').val())) {
-        console.log(1);
+    if (reg2.test($(this).val())) {
+        ts.css('display', 'none');
     } else {
-        console.log(2);
+        ts.css('display', 'block');
+        tsi.text('大小写与其他字符组成8 - 16位的密码');
     }
 });
 $('.zc').on('click',function(){
     $('.box').css('display','none');
     $('.box3').css('display','block');
+
+    ts.css('display', 'none');
+
+
 });
 //注册
 $('.btnc').on('click',function(){
     // $('.box3').css('display', 'none');
-
-    if(!$('.zcid').val()||!$('.zcpas').val()){
-        alert('帐号晦密码不能为空！');
-        return false;
-    };
+    if (ts.css('display') == 'block'){
+        return
+    }
     $.ajax({
         url: '../json/user.php',
         type: 'get',
@@ -62,8 +72,11 @@ $('.btnc').on('click',function(){
         dataType: 'json',
         success: function (data) {
             alert(data.msg);
-            $('.box').css('display', 'block');
-            $('.box3').css('display', 'none');
+            if(data.err == 3){
+                $('.box').css('display', 'block');
+                $('.box3').css('display', 'none');
+            }
+           
 
         },
         error: function (status) {
