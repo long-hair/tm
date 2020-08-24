@@ -15,6 +15,7 @@ if (!localStorage.getItem('user')){
             <p>喵，欢迎来到天猫</p>
             <a href="http://10.20.158.35/qianfeng/day0812/work/gulp-cli/dist/pages/login.html#">请登录</a>
             <a href="http://10.20.158.35/qianfeng/day0812/work/gulp-cli/dist/pages/login.html#">免费注册</a>`);
+            location.reload();
 
         });
     }

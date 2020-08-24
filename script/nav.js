@@ -14,6 +14,7 @@ else{
             $('.nav_l').empty().append(` <p>喵，欢迎来到天猫</p>
             <a class="a1" href="http://10.20.158.35/qianfeng/day0812/work/gulp-cli/dist/pages/login.html#">请登录</a>
             <a class="a2" href="http://10.20.158.35/qianfeng/day0812/work/gulp-cli/dist/pages/login.html#">免费注册</a>`);
+            location.reload();
         });
     };
 }
